@@ -1,0 +1,72 @@
+D:\Projects\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\appsettings.Development.json
+D:\Projects\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\appsettings.json
+D:\Projects\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.exe
+D:\Projects\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.deps.json
+D:\Projects\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.runtimeconfig.json
+D:\Projects\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.dll
+D:\Projects\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.pdb
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.csproj.AssemblyReference.cache
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.AssemblyInfoInputs.cache
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.AssemblyInfo.cs
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.csproj.CoreCompileInputs.cache
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets\msbuild.AccountOwnerServer.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets\msbuild.build.AccountOwnerServer.props
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AccountOwnerServer.props
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AccountOwnerServer.props
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets.build.json
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets.development.json
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\scopedcss\bundle\AccountOwnerServer.styles.css
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.dll
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\refint\AccountOwnerServer.dll
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.pdb
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.genruntimeconfig.cache
+D:\Projects\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\ref\AccountOwnerServer.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\appsettings.Development.json
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\appsettings.json
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\nlog.config
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.exe
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.deps.json
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.runtimeconfig.json
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AccountOwnerServer.pdb
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\NLog.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Contracts.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\LoggerService.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\LoggerService.pdb
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Contracts.pdb
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.csproj.AssemblyReference.cache
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.AssemblyInfoInputs.cache
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.AssemblyInfo.cs
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.csproj.CoreCompileInputs.cache
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets\msbuild.AccountOwnerServer.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets\msbuild.build.AccountOwnerServer.props
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AccountOwnerServer.props
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AccountOwnerServer.props
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets.build.json
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\staticwebassets.development.json
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\scopedcss\bundle\AccountOwnerServer.styles.css
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.csproj.CopyComplete
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\refint\AccountOwnerServer.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.pdb
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\AccountOwnerServer.genruntimeconfig.cache
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\obj\Debug\net6.0\ref\AccountOwnerServer.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\MySqlConnector.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Entities.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Entities.pdb
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Repository.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\Repository.pdb
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AutoMapper.dll
+D:\Projects\Account Owner\AccountOwnerServer\AccountOwnerServer\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

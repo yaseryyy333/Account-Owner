@@ -1,0 +1,43 @@
+2023-03-09 14:09:15.0680 INFO Here is Info message from the controller.
+2023-03-09 14:09:15.1408 DEBUG Here is debug message from the controller.
+2023-03-09 14:09:15.1408 WARN Here is warn message from the controller.
+2023-03-09 14:09:15.1408 ERROR Here is error message from the controller.
+2023-03-09 14:26:13.9703 INFO Here is Info message from the controller.
+2023-03-09 14:26:14.4403 DEBUG Here is debug message from the controller.
+2023-03-09 14:26:14.8931 WARN Here is warn message from the controller.
+2023-03-09 14:26:15.2922 ERROR Here is error message from the controller.
+2023-03-09 14:48:52.5894 INFO Here is Info message from the controller.
+2023-03-09 14:48:52.5894 DEBUG Here is debug message from the controller.
+2023-03-09 14:48:52.5894 WARN Here is warn message from the controller.
+2023-03-09 14:48:52.5894 ERROR Here is error message from the controller.
+2023-03-09 16:35:18.2390 INFO Here is Info message from the controller.
+2023-03-09 16:35:18.3185 DEBUG Here is debug message from the controller.
+2023-03-09 16:35:18.3185 WARN Here is warn message from the controller.
+2023-03-09 16:35:18.3185 ERROR Here is error message from the controller.
+2023-03-09 16:41:27.3898 INFO Here is Info message from the controller.
+2023-03-09 16:41:27.5061 DEBUG Here is debug message from the controller.
+2023-03-09 16:41:27.5061 WARN Here is warn message from the controller.
+2023-03-09 16:41:27.5061 ERROR Here is error message from the controller.
+2023-03-09 16:45:13.0024 INFO Here is Info message from the controller.
+2023-03-09 16:45:13.1204 DEBUG Here is debug message from the controller.
+2023-03-09 16:45:13.1204 WARN Here is warn message from the controller.
+2023-03-09 16:45:13.1204 ERROR Here is error message from the controller.
+2023-03-09 16:49:05.0141 INFO Here is Info message from the controller.
+2023-03-09 16:49:05.1141 DEBUG Here is debug message from the controller.
+2023-03-09 16:49:05.1141 WARN Here is warn message from the controller.
+2023-03-09 16:49:05.1141 ERROR Here is error message from the controller.
+2023-03-09 16:50:15.6130 INFO Here is Info message from the controller.
+2023-03-09 16:50:15.6742 DEBUG Here is debug message from the controller.
+2023-03-09 16:50:15.6742 WARN Here is warn message from the controller.
+2023-03-09 16:50:15.6742 ERROR Here is error message from the controller.
+2023-03-09 16:52:09.7578 INFO Here is Info message from the controller.
+2023-03-09 16:52:09.7578 DEBUG Here is debug message from the controller.
+2023-03-09 16:52:09.7578 WARN Here is warn message from the controller.
+2023-03-09 16:52:09.7578 ERROR Here is error message from the controller.
+2023-03-09 16:52:41.3303 INFO Here is Info message from the controller.
+2023-03-09 16:52:41.4172 DEBUG Here is debug message from the controller.
+2023-03-09 16:52:41.4172 WARN Here is warn message from the controller.
+2023-03-09 16:52:41.4172 ERROR Here is error message from the controller.
+2023-03-09 16:53:32.8458 INFO Returned all owners from database.
+2023-03-09 16:55:20.7270 INFO Returned all owners from database.
+2023-03-09 17:14:40.1590 INFO Returned all owners from database.
