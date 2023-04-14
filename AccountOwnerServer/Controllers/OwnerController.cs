@@ -2,7 +2,6 @@
 using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AccountOwnerServer.Controllers
@@ -15,16 +14,16 @@ namespace AccountOwnerServer.Controllers
         private readonly IRepositoryWrapper _repository;
         private readonly IMapper _mapper;
 
-        public OwnerController(ILoggerManager logger,IRepositoryWrapper repository, IMapper mapper )
+        public OwnerController(ILoggerManager logger, IRepositoryWrapper repository, IMapper mapper)
         {
             _logger = logger;
             _repository = repository;
             _mapper = mapper;
         }
-        
+
         [HttpGet]
         public IActionResult GetAllOwners()
-            {
+        {
             try
             {
                 var owners = _repository.Owner.GetAllOwners();
@@ -41,7 +40,7 @@ namespace AccountOwnerServer.Controllers
             }
         }
 
-        [HttpGet("{id}", Name = "OwnerId")]
+        [HttpGet("{id}", Name = "OwnerById")]
         public IActionResult GetOwnerById(Guid id)
         {
             try
@@ -95,7 +94,7 @@ namespace AccountOwnerServer.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateOwner([FromBody]OwnerForCreationDto owner)
+        public IActionResult CreateOwner([FromBody] OwnerForCreationDTO owner)
         {
             try
             {
@@ -118,6 +117,72 @@ namespace AccountOwnerServer.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"Something went wrong inside CreateOwner action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateOwner(Guid id, [FromBody]OwnerForUpdateDTO owner)
+        {
+            try
+            {
+                if(owner is null)
+                {
+                    _logger.LogError("Owner object sent from client is null.");
+                    return BadRequest("Owner object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid owner object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
+
+                var ownerEntity = _repository.Owner.GetOwnerById(id);
+                if(ownerEntity is null)
+                {
+                    _logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+
+                _mapper.Map(owner, ownerEntity);
+
+                _repository.Owner.UpdateOwner(ownerEntity);
+                _repository.Save();
+
+                return NoContent();
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside UpdateOwner action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult UpdateOwner(Guid id)
+        {
+            try
+            {
+                var owner = _repository.Owner.GetOwnerById(id);
+                if (owner == null)
+                {
+                    _logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+                if (_repository.Account.AccountsByOwner(id).Any())
+                {
+                    _logger.LogError($"Cannot delete owner with id: {id}. It has related accounts. Delete those accounts first");
+                    return BadRequest("Cannot delete owner. It has related accounts. Delete those accounts first");
+                }
+
+                _repository.Owner.DeleteOwner(owner);
+                _repository.Save();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside DeleteOwner action: {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
         }
