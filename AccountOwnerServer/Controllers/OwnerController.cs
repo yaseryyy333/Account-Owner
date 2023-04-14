@@ -160,7 +160,7 @@ namespace AccountOwnerServer.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult UpdateOwner(Guid id)
+        public IActionResult DeleteOwner(Guid id)
         {
             try
             {
