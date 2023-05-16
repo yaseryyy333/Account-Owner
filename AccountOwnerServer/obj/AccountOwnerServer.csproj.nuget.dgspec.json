@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ASP.Net Core\\Account-Owner\\AccountOwnerServer\\AccountOwnerServer.csproj": {}
+    "D:\\Projects\\Account-Owner\\AccountOwnerServer\\AccountOwnerServer.csproj": {}
   },
   "projects": {
-    "E:\\ASP.Net Core\\Account-Owner\\AccountOwnerServer\\AccountOwnerServer.csproj": {
+    "D:\\Projects\\Account-Owner\\AccountOwnerServer\\AccountOwnerServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.Net Core\\Account-Owner\\AccountOwnerServer\\AccountOwnerServer.csproj",
+        "projectUniqueName": "D:\\Projects\\Account-Owner\\AccountOwnerServer\\AccountOwnerServer.csproj",
         "projectName": "AccountOwnerServer",
-        "projectPath": "E:\\ASP.Net Core\\Account-Owner\\AccountOwnerServer\\AccountOwnerServer.csproj",
-        "packagesPath": "C:\\Users\\Yasser-Windows\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.Net Core\\Account-Owner\\AccountOwnerServer\\obj\\",
+        "projectPath": "D:\\Projects\\Account-Owner\\AccountOwnerServer\\AccountOwnerServer.csproj",
+        "packagesPath": "C:\\Users\\ssc\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Account-Owner\\AccountOwnerServer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Yasser-Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ssc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,18 +22,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ASP.Net Core\\Account-Owner\\LoggerService\\LoggerService.csproj": {
-                "projectPath": "E:\\ASP.Net Core\\Account-Owner\\LoggerService\\LoggerService.csproj"
+              "D:\\Projects\\Account-Owner\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "D:\\Projects\\Account-Owner\\LoggerService\\LoggerService.csproj"
               },
-              "E:\\ASP.Net Core\\Account-Owner\\Repository\\Repository.csproj": {
-                "projectPath": "E:\\ASP.Net Core\\Account-Owner\\Repository\\Repository.csproj"
+              "D:\\Projects\\Account-Owner\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\Projects\\Account-Owner\\Repository\\Repository.csproj"
               }
             }
           }
@@ -80,25 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ASP.Net Core\\Account-Owner\\Contracts\\Contracts.csproj": {
+    "D:\\Projects\\Account-Owner\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.Net Core\\Account-Owner\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "D:\\Projects\\Account-Owner\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "E:\\ASP.Net Core\\Account-Owner\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\Yasser-Windows\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.Net Core\\Account-Owner\\Contracts\\obj\\",
+        "projectPath": "D:\\Projects\\Account-Owner\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\ssc\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Account-Owner\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Yasser-Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ssc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,15 +97,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ASP.Net Core\\Account-Owner\\Entities\\Entities.csproj": {
-                "projectPath": "E:\\ASP.Net Core\\Account-Owner\\Entities\\Entities.csproj"
+              "D:\\Projects\\Account-Owner\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Projects\\Account-Owner\\Entities\\Entities.csproj"
               }
             }
           }
@@ -144,25 +134,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ASP.Net Core\\Account-Owner\\Entities\\Entities.csproj": {
+    "D:\\Projects\\Account-Owner\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.Net Core\\Account-Owner\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\Projects\\Account-Owner\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "E:\\ASP.Net Core\\Account-Owner\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Yasser-Windows\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.Net Core\\Account-Owner\\Entities\\obj\\",
+        "projectPath": "D:\\Projects\\Account-Owner\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\ssc\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Account-Owner\\Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Yasser-Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ssc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,7 +156,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -210,25 +195,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ASP.Net Core\\Account-Owner\\LoggerService\\LoggerService.csproj": {
+    "D:\\Projects\\Account-Owner\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.Net Core\\Account-Owner\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "D:\\Projects\\Account-Owner\\LoggerService\\LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "E:\\ASP.Net Core\\Account-Owner\\LoggerService\\LoggerService.csproj",
-        "packagesPath": "C:\\Users\\Yasser-Windows\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.Net Core\\Account-Owner\\LoggerService\\obj\\",
+        "projectPath": "D:\\Projects\\Account-Owner\\LoggerService\\LoggerService.csproj",
+        "packagesPath": "C:\\Users\\ssc\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Account-Owner\\LoggerService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Yasser-Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ssc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -236,15 +217,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ASP.Net Core\\Account-Owner\\Contracts\\Contracts.csproj": {
-                "projectPath": "E:\\ASP.Net Core\\Account-Owner\\Contracts\\Contracts.csproj"
+              "D:\\Projects\\Account-Owner\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\Projects\\Account-Owner\\Contracts\\Contracts.csproj"
               }
             }
           }
@@ -280,25 +260,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ASP.Net Core\\Account-Owner\\Repository\\Repository.csproj": {
+    "D:\\Projects\\Account-Owner\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.Net Core\\Account-Owner\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\Projects\\Account-Owner\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "E:\\ASP.Net Core\\Account-Owner\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Yasser-Windows\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.Net Core\\Account-Owner\\Repository\\obj\\",
+        "projectPath": "D:\\Projects\\Account-Owner\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\ssc\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Account-Owner\\Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Yasser-Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ssc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -306,18 +282,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ASP.Net Core\\Account-Owner\\Contracts\\Contracts.csproj": {
-                "projectPath": "E:\\ASP.Net Core\\Account-Owner\\Contracts\\Contracts.csproj"
+              "D:\\Projects\\Account-Owner\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\Projects\\Account-Owner\\Contracts\\Contracts.csproj"
               },
-              "E:\\ASP.Net Core\\Account-Owner\\Entities\\Entities.csproj": {
-                "projectPath": "E:\\ASP.Net Core\\Account-Owner\\Entities\\Entities.csproj"
+              "D:\\Projects\\Account-Owner\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Projects\\Account-Owner\\Entities\\Entities.csproj"
               }
             }
           }
@@ -347,7 +322,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
