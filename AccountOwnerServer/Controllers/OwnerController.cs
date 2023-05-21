@@ -24,7 +24,7 @@ namespace AccountOwnerServer.Controllers
         [HttpGet]
         public IActionResult GetAllOwners()
         {
-            try
+            try 
             {
                 var owners = _repository.Owner.GetAllOwners();
                 _logger.LogInfo($"Returned all owners from database.");
