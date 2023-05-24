@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Entities;
+using Entities.DataTransferObjects;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -22,6 +23,13 @@ namespace Repository
             return FindAll()
                 .OrderBy( ow => ow.Name)
                 .ToList();
+        }
+
+        public PagedList<Owner> GetOwners(OwnerParameters ownerParameters)
+        {
+            return PagedList<Owner>.ToPagedList(FindAll().OrderBy(on => on.Name),
+                ownerParameters.PageNumber,
+                ownerParameters.PageSize);
         }
 
         public Owner GetOwnerById(Guid ownerId)
