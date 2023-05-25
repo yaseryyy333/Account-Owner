@@ -3,6 +3,7 @@ using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace AccountOwnerServer.Controllers
 {
@@ -24,7 +25,7 @@ namespace AccountOwnerServer.Controllers
         [HttpGet]
         public IActionResult GetAllOwners()
         {
-            try
+            try 
             {
                 var owners = _repository.Owner.GetAllOwners();
                 _logger.LogInfo($"Returned all owners from database.");
@@ -38,6 +39,24 @@ namespace AccountOwnerServer.Controllers
                 _logger.LogError($"Something went wrong inside GetAllOwners action: {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
+        }
+
+        [HttpGet("GetOwners")]
+        public IActionResult GetOwners([FromQuery] OwnerParameters ownerParameters)
+        {
+            var owners = _repository.Owner.GetOwners(ownerParameters);
+            var metadata = new
+            {
+                owners.TotalCount,
+                owners.PageSize,
+                owners.CurrentPage,
+                owners.TotalPages,
+                owners.HasNext,
+                owners.HasPrevious
+            };
+            Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
+            _logger.LogInfo($"Returned {owners.TotalCount} owners from database.");
+            return Ok(owners);
         }
 
         [HttpGet("{id}", Name = "OwnerById")]
