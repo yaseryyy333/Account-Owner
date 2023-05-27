@@ -44,7 +44,13 @@ namespace AccountOwnerServer.Controllers
         [HttpGet("GetOwners")]
         public IActionResult GetOwners([FromQuery] OwnerParameters ownerParameters)
         {
+            if (!ownerParameters.ValidYearRange)
+            {
+                return BadRequest("Max year of birth cannot be lees than min year of birth");
+            }
+
             var owners = _repository.Owner.GetOwners(ownerParameters);
+
             var metadata = new
             {
                 owners.TotalCount,
@@ -54,7 +60,9 @@ namespace AccountOwnerServer.Controllers
                 owners.HasNext,
                 owners.HasPrevious
             };
+
             Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
+
             _logger.LogInfo($"Returned {owners.TotalCount} owners from database.");
             return Ok(owners);
         }
