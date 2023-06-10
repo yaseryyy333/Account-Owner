@@ -12,9 +12,11 @@ namespace Repository
 {
     internal class AccountRepository : RepositoryBase<Account>, IAccountRepository
     {
-        public AccountRepository(RepositoryContext repositoryContext) : base(repositoryContext)
+        private ISortHelper<Account> _accountSortHelper;
+        public AccountRepository(RepositoryContext repositoryContext, ISortHelper<Account> accountSortHelper) 
+            : base(repositoryContext)
         {
-
+            _accountSortHelper = accountSortHelper;
         }
 
         public PagedList<Account> GetAccountsForOwner(Guid ownerId, AccountParameters accountParameters)

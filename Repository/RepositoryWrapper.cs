@@ -1,10 +1,13 @@
 ﻿using Contracts;
 using Entities;
+using Entities.Models;
 
 namespace Repository
 {
     public class RepositoryWrapper : IRepositoryWrapper
     {
+        private ISortHelper<Owner> _ownerSortHelper;
+        private ISortHelper<Account> _accountSortHelper;
         private RepositoryContext _repositoryContext;
         private IOwnerRepository _owner;
         private IAccountRepository _account;
@@ -15,7 +18,7 @@ namespace Repository
             {
                 if(_owner == null)
                 {
-                    return _owner = new OwnerRepository(_repositoryContext);
+                    return _owner = new OwnerRepository(_repositoryContext, _ownerSortHelper);
                 }
                 return _owner;
             }
@@ -27,16 +30,20 @@ namespace Repository
             {
                 if(_account == null)
                 {
-                    _account = new AccountRepository(_repositoryContext);
+                    _account = new AccountRepository(_repositoryContext, _accountSortHelper);
                 }
                 return _account;
             }
         }
 
 
-        public RepositoryWrapper(RepositoryContext repositoryContext)
+        public RepositoryWrapper(RepositoryContext repositoryContext,
+            ISortHelper<Owner> ownerSortHelper,
+            ISortHelper<Account> accountSortHelper)
         {
             _repositoryContext = repositoryContext;
+            _ownerSortHelper = ownerSortHelper;
+            _accountSortHelper = accountSortHelper;
         }
         public void Save()
         {

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Net.NetworkInformation;
 using Entities;
 using Repository;
+using Entities.Models;
 
 namespace AccountOwnerServer.Extentsions
 {
@@ -46,6 +47,9 @@ namespace AccountOwnerServer.Extentsions
 
         public static void ConfigureRepositoryWrapper(this IServiceCollection services)
         {
+            services.AddScoped<ISortHelper<Owner>, SortHelper<Owner>>();
+            services.AddScoped<ISortHelper<Account>, SortHelper<Account>>();
+
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
     }
