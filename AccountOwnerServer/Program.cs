@@ -34,7 +34,7 @@ builder.Services.AddControllers(config =>
     {
         config.RespectBrowserAcceptHeader = true;
         config.ReturnHttpNotAcceptable = true;
-    }).AddXmlDataContractSerializerFormatters()
+    })/*.AddXmlDataContractSerializerFormatters()*/
     .AddNewtonsoftJson();
 
 var app = builder.Build();

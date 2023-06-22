@@ -41,11 +41,15 @@ namespace Repository
 
         public RepositoryWrapper(RepositoryContext repositoryContext,
             ISortHelper<Owner> ownerSortHelper,
-            ISortHelper<Account> accountSortHelper)
+            ISortHelper<Account> accountSortHelper,
+            IDataShaper<Owner> ownerDataShaper,
+            IDataShaper<Account> accountDataShaper)
         {
             _repositoryContext = repositoryContext;
             _ownerSortHelper = ownerSortHelper;
             _accountSortHelper = accountSortHelper;
+            _ownerDataShaper = ownerDataShaper;
+            _accountDataShaper = accountDataShaper;
         }
         public void Save()
         {
