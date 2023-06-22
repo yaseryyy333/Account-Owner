@@ -2,6 +2,7 @@
 using Entities.Models;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,8 +12,10 @@ namespace Contracts
     public interface IOwnerRepository : IRepositoryBase<Owner>
     {
         IEnumerable<Owner> GetAllOwners();
-        PagedList<Owner> GetOwners(OwnerParameters ownerParameters);
+        //PagedList<Owner> GetOwners(OwnerParameters ownerParameters);
+        PagedList<ExpandoObject> GetOwners(OwnerParameters ownerParameters);
 
+        ExpandoObject GetOwnerById(Guid ownerId, string fields);
         Owner GetOwnerById(Guid ownerId);
         Owner GetOwnerWithDetails(Guid ownerId);
         void CreateOwner(Owner owner);

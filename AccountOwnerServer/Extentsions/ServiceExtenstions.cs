@@ -5,6 +5,7 @@ using System.Net.NetworkInformation;
 using Entities;
 using Repository;
 using Entities.Models;
+using Entities.Helpers;
 
 namespace AccountOwnerServer.Extentsions
 {
@@ -49,6 +50,9 @@ namespace AccountOwnerServer.Extentsions
         {
             services.AddScoped<ISortHelper<Owner>, SortHelper<Owner>>();
             services.AddScoped<ISortHelper<Account>, SortHelper<Account>>();
+
+            services.AddScoped<IDataShaper<Owner>, DataShaper<Owner>>();
+            services.AddScoped<IDataShaper<Account>, DataShaper<Account>>();
 
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }

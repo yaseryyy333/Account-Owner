@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Entities;
+using Entities.Helpers;
 using Entities.Models;
 
 namespace Repository
@@ -11,14 +12,15 @@ namespace Repository
         private RepositoryContext _repositoryContext;
         private IOwnerRepository _owner;
         private IAccountRepository _account;
-
+        private IDataShaper<Owner> _ownerDataShaper;
+        private IDataShaper<Account> _accountDataShaper;
         public IOwnerRepository Owner
         {
             get
             {
                 if(_owner == null)
                 {
-                    return _owner = new OwnerRepository(_repositoryContext, _ownerSortHelper);
+                    return _owner = new OwnerRepository(_repositoryContext, _ownerSortHelper, _ownerDataShaper);
                 }
                 return _owner;
             }
@@ -30,7 +32,7 @@ namespace Repository
             {
                 if(_account == null)
                 {
-                    _account = new AccountRepository(_repositoryContext, _accountSortHelper);
+                    _account = new AccountRepository(_repositoryContext, _accountSortHelper, _accountDataShaper);
                 }
                 return _account;
             }

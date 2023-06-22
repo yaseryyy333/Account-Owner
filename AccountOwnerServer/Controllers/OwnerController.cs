@@ -4,6 +4,7 @@ using Entities.DataTransferObjects;
 using Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Dynamic;
 
 namespace AccountOwnerServer.Controllers
 {
@@ -68,16 +69,23 @@ namespace AccountOwnerServer.Controllers
         }
 
         [HttpGet("{id}", Name = "OwnerById")]
-        public IActionResult GetOwnerById(Guid id)
+        public IActionResult GetOwnerById(Guid id,[FromQuery] string fields)
         {
             try
             {
-                var owner = _repository.Owner.GetOwnerById(id);
-                if (owner is null)
+                //var owner = _repository.Owner.GetOwnerById(id);
+                var owner = _repository.Owner.GetOwnerById(id, fields);
+
+                if (owner == default(ExpandoObject))
                 {
                     _logger.LogError($"Owner with id: {id}, hasn't been found in db.");
                     return NotFound();
                 }
+                //if (owner is null)
+                //{
+                //    _logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+                //    return NotFound();
+                //}
                 else
                 {
                     _logger.LogInfo($"Returned owner with id: {id}");
@@ -165,7 +173,7 @@ namespace AccountOwnerServer.Controllers
                     return BadRequest("Invalid model object");
                 }
 
-                var ownerEntity = _repository.Owner.GetOwnerById(id);
+                var ownerEntity = _repository.Owner.GetOwnerById(id, "");
                 if(ownerEntity is null)
                 {
                     _logger.LogError($"Owner with id: {id}, hasn't been found in db.");
@@ -174,7 +182,7 @@ namespace AccountOwnerServer.Controllers
 
                 _mapper.Map(owner, ownerEntity);
 
-                _repository.Owner.UpdateOwner(ownerEntity);
+               // _repository.Owner.UpdateOwner(ownerEntity);
                 _repository.Save();
 
                 return NoContent();

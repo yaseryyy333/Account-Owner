@@ -1,10 +1,10 @@
 ﻿using Contracts;
 using Entities;
 using Entities.DataTransferObjects;
+using Entities.Helpers;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
-using System.Text;
+using System.Dynamic;
 using System.Linq.Dynamic.Core;
 
 namespace Repository
@@ -12,10 +12,15 @@ namespace Repository
     public class OwnerRepository : RepositoryBase<Owner>, IOwnerRepository
     {
         private ISortHelper<Owner> _sortHelper;
-        public OwnerRepository(RepositoryContext repositoryContext, ISortHelper<Owner> sortHelper)
+        private IDataShaper<Owner> _dataShaper;
+        public OwnerRepository(
+            RepositoryContext repositoryContext,
+            ISortHelper<Owner> sortHelper,
+            IDataShaper<Owner> dataShaper)
             : base(repositoryContext)
         {
             _sortHelper = sortHelper;
+            _dataShaper = dataShaper;
         }
 
 
@@ -26,7 +31,7 @@ namespace Repository
                 .ToList();
         }
 
-        public PagedList<Owner> GetOwners(OwnerParameters ownerParameters)
+        public PagedList<ExpandoObject> GetOwners(OwnerParameters ownerParameters)
         {
             var owners = FindByCondition(o => o.BirthOfDay.Year >= ownerParameters.MinYearOfBirth &&
             o.BirthOfDay.Year <= ownerParameters.MaxYearOfBirth);
@@ -35,9 +40,11 @@ namespace Repository
             //SearchByName(ref owner, ownerParameters.Name);
             SearchByName(ref owners, ownerParameters.Name);
 
-            var sortedOwners = _sortHelper.ApplySort(owners, ownerParameters.OrderBy);
+            /*var sortedOwners =*/ _sortHelper.ApplySort(owners, ownerParameters.OrderBy);
 
-            return PagedList<Owner>.ToPagedList(sortedOwners,
+            var shapedOwners = _dataShaper.ShapeData(owners, ownerParameters.Fields);
+
+            return PagedList<ExpandoObject>.ToPagedList(shapedOwners,
                 ownerParameters.PageNumber,
                 ownerParameters.PageSize);
             //return PagedList<Owner>.ToPagedList(FindAll().OrderBy(on => on.Name),
@@ -53,10 +60,15 @@ namespace Repository
             owners = owners.Where(o => o.Name.ToLower().Contains(ownerName.Trim().ToLower()));
         }
 
-        public Owner GetOwnerById(Guid ownerId)
+        public ExpandoObject GetOwnerById(Guid ownerId, string fields)
         {
-            return FindByCondition(owner => owner.Id.Equals(ownerId))
-                    .FirstOrDefault();
+            var owner = FindByCondition(owner => owner.Id.Equals(ownerId))
+                .DefaultIfEmpty(new Owner())
+                .FirstOrDefault();
+
+            return _dataShaper.ShapeData(owner, fields);
+
+
         }
 
         public Owner GetOwnerWithDetails(Guid ownerId)
@@ -79,6 +91,11 @@ namespace Repository
         public void DeleteOwner(Owner owner)
         {
             Delete(owner);
+        }
+
+        public Owner GetOwnerById(Guid ownerId)
+        {
+            throw new NotImplementedException();
         }
 
         //private void ApplySort(ref IQueryable<Owner> owners, string orderByQueryString)

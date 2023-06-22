@@ -1,6 +1,7 @@
 ﻿using Contracts;
 using Entities;
 using Entities.DataTransferObjects;
+using Entities.Helpers;
 using Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -13,10 +14,15 @@ namespace Repository
     internal class AccountRepository : RepositoryBase<Account>, IAccountRepository
     {
         private ISortHelper<Account> _accountSortHelper;
-        public AccountRepository(RepositoryContext repositoryContext, ISortHelper<Account> accountSortHelper) 
+        private IDataShaper<Account> _accountDataShaper;
+        public AccountRepository(RepositoryContext repositoryContext,
+            ISortHelper<Account> accountSortHelper,
+            IDataShaper<Account> accountDataShaper
+            ) 
             : base(repositoryContext)
         {
             _accountSortHelper = accountSortHelper;
+            _accountDataShaper= accountDataShaper;
         }
 
         public PagedList<Account> GetAccountsForOwner(Guid ownerId, AccountParameters accountParameters)
